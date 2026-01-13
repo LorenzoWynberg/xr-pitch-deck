@@ -17,7 +17,7 @@ export function HeroSlide() {
       {/* Hero image background */}
       <div className="absolute inset-0">
         <Image
-          src="/imgs/BCJUNGLE-28.jpg"
+          src="/imgs-optimized/BCJUNGLE-28.webp"
           alt="XR Studio Event"
           fill
           className="object-cover opacity-30"

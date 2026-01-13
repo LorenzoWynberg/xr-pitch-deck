@@ -7,12 +7,12 @@ const leadershipTeam = [
   {
     name: "Sam Zahedi",
     role: "CEO, Founder",
-    image: "/imgs/sam.jpg",
+    image: "/imgs-optimized/sam.webp",
   },
   {
     name: "Pablo Vargas",
     role: "COO, Partner",
-    image: "/imgs/pablo.jpg",
+    image: "/imgs-optimized/pablo.webp",
   },
 ];
 
@@ -20,37 +20,37 @@ const coreTeam = [
   {
     name: "Juan Jose Lopez",
     role: "Logistic Manager",
-    image: "/imgs/juan-jose.jpg",
+    image: "/imgs-optimized/juan-jose.webp",
   },
   {
     name: "Roberto Amarat",
     role: "Stage Manager",
-    image: "/imgs/rob.jpg",
+    image: "/imgs-optimized/rob.webp",
   },
   {
     name: "Jeimy Sibaja",
     role: "Artistic Direction Lead",
-    image: "/imgs/jeimy.jpg",
+    image: "/imgs-optimized/jeimy.webp",
   },
   {
     name: "Anna Pearson",
     role: "Hospitality & Sponsorships",
-    image: "/imgs/ana-yancy.jpg",
+    image: "/imgs-optimized/ana-yancy.webp",
   },
   {
     name: "Fernando Lopez",
     role: "Vendor Coordinator",
-    image: "/imgs/fernando.jpg",
+    image: "/imgs-optimized/fernando.webp",
   },
   {
     name: "Ronald Mora",
     role: "Affiliate & Social Media",
-    image: "/imgs/ronald.png",
+    image: "/imgs-optimized/ronald.webp",
   },
   {
     name: "Sofia Rodriguez",
     role: "Art & Design Coordinator",
-    image: "/imgs/sofia.jpg",
+    image: "/imgs-optimized/sofia.webp",
   },
 ];
 

@@ -17,7 +17,7 @@ export function SummarySlide() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/imgs/_A1A6014.jpg"
+          src="/imgs-optimized/_A1A6014.webp"
           alt="XR Studio Event"
           fill
           className="object-cover opacity-20"

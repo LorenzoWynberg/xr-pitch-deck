@@ -43,7 +43,7 @@ export function WhoWeAreSlide() {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
-          src="/imgs/JACOBCOLLIER_21-09-25-04612.jpg"
+          src="/imgs-optimized/JACOBCOLLIER_21-09-25-04612.webp"
           alt="XR Studio Concert"
           fill
           className="object-cover opacity-20"
