@@ -70,10 +70,32 @@ export function BrandsSlide() {
           <h3 className="text-5xl md:text-6xl font-black tracking-tight mb-4">
             Our <span className="text-gradient">Brands</span>
           </h3>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             Five powerful event verticals under one platform, each with strong brand recognition
             and proven track records.
           </p>
+
+          {/* Brand logos row */}
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+            {brands.map((brand, index) => (
+              <motion.div
+                key={brand.name}
+                className="relative w-16 h-16 md:w-20 md:h-20 opacity-70 hover:opacity-100 transition-opacity"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 0.7, y: 0 }}
+                whileHover={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Image
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  fill
+                  className="object-contain"
+                />
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
 
         {/* Brands grid */}
@@ -99,16 +121,6 @@ export function BrandsSlide() {
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
-              </div>
-
-              {/* Logo in top right */}
-              <div className="absolute top-4 right-4 w-16 h-16 md:w-20 md:h-20">
-                <Image
-                  src={brand.logo}
-                  alt={`${brand.name} logo`}
-                  fill
-                  className="object-contain drop-shadow-lg"
-                />
               </div>
 
               <div className="absolute bottom-0 left-0 right-0 p-6">
