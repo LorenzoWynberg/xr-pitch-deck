@@ -76,11 +76,11 @@ export function BrandsSlide() {
           </p>
 
           {/* Brand logos row */}
-          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
             {brands.map((brand, index) => (
               <motion.div
                 key={brand.name}
-                className="relative w-14 h-14 md:w-16 md:h-16 bg-white/90 rounded-xl p-2 hover:bg-white transition-all shadow-lg"
+                className="relative w-24 h-24 md:w-28 md:h-28 bg-white rounded-2xl p-3 hover:scale-105 transition-all shadow-lg"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -90,6 +90,7 @@ export function BrandsSlide() {
                   src={brand.logo}
                   alt={`${brand.name} logo`}
                   fill
+                  sizes="112px"
                   className="object-contain p-2"
                 />
               </motion.div>
