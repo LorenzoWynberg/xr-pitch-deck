@@ -8,7 +8,6 @@ import {
   ShoppingBag,
   UserCog,
   Wallet,
-  ArrowRight
 } from "lucide-react";
 
 const fundCategories = [
@@ -106,7 +105,6 @@ export function UseOfFundsSlide() {
                 </div>
                 <h4 className="text-xl font-bold mb-2">{category.title}</h4>
                 <p className="text-sm text-muted-foreground">{category.description}</p>
-                <ArrowRight className="w-5 h-5 mt-4 text-muted-foreground group-hover:text-purple-400 group-hover:translate-x-2 transition-all" />
               </div>
             </motion.div>
           ))}
