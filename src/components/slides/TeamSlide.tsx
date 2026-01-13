@@ -121,7 +121,7 @@ export function TeamSlide() {
 
         {/* Core team grid */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
