@@ -52,6 +52,11 @@ const coreTeam = [
     role: "Art & Design Coordinator",
     image: "/imgs-optimized/sofia.webp",
   },
+  {
+    name: "Lorenzo Wynberg",
+    role: "Senior Web Developer",
+    image: "/imgs-optimized/lore.webp",
+  },
 ];
 
 export function TeamSlide() {
@@ -116,7 +121,7 @@ export function TeamSlide() {
 
         {/* Core team grid */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6"
+          className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
