@@ -44,7 +44,7 @@ const brands = [
   {
     name: "Sweetspot",
     description: "Leading esports league and competitive gaming platform.",
-    image: "/imgs-optimized/IMG_6282.webp",
+    image: "/imgs-optimized/SS_IMG_0238.webp",
     logo: "/imgs-optimized/logos/sweetspot.webp",
     tags: ["Esports", "Gaming", "Tournaments"],
     highlight: "National Leagues, Online & Live Events",
