@@ -70,32 +70,10 @@ export function BrandsSlide() {
           <h3 className="text-5xl md:text-6xl font-black tracking-tight mb-4">
             Our <span className="text-gradient">Brands</span>
           </h3>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Five powerful event verticals under one platform, each with strong brand recognition
             and proven track records.
           </p>
-
-          {/* Brand logos row */}
-          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
-            {brands.map((brand, index) => (
-              <motion.div
-                key={brand.name}
-                className="relative w-24 h-24 md:w-28 md:h-28 bg-white rounded-2xl p-3 hover:scale-105 transition-all shadow-lg"
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Image
-                  src={brand.logo}
-                  alt={`${brand.name} logo`}
-                  fill
-                  sizes="112px"
-                  className="object-contain p-2"
-                />
-              </motion.div>
-            ))}
-          </div>
         </motion.div>
 
         {/* Brands grid */}

@@ -17,7 +17,7 @@ export function HeroSlide() {
       {/* Hero image background */}
       <div className="absolute inset-0">
         <Image
-          src="/imgs-optimized/BCJUNGLE-28.webp"
+          src="/imgs-optimized/IMG_8566-Mejorado-NR-2.webp"
           alt="XR Studio Event"
           fill
           className="object-cover opacity-30"
@@ -87,27 +87,41 @@ export function HeroSlide() {
 
           {/* Brand logos */}
           <motion.div
-            className="mt-16 flex flex-wrap justify-center items-center gap-8 opacity-60"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.6 }}
-            transition={{ delay: 1, duration: 0.8 }}
+            className="mt-12 flex flex-wrap justify-center items-center gap-4 md:gap-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9, duration: 0.6 }}
           >
-            <span className="text-sm uppercase tracking-wider">Our Brands:</span>
-            <span className="font-bold">Electric Animals</span>
-            <span className="text-purple-400">|</span>
-            <span className="font-bold">Blockchain Jungle</span>
-            <span className="text-purple-400">|</span>
-            <span className="font-bold">Pura Tinta</span>
-            <span className="text-purple-400">|</span>
-            <span className="font-bold">Magflow</span>
-            <span className="text-purple-400">|</span>
-            <span className="font-bold">Sweetspot</span>
+            {[
+              { name: "Electric Animals", logo: "/imgs-optimized/logos/electric-animals.webp" },
+              { name: "Blockchain Jungle", logo: "/imgs-optimized/logos/blockchain-jungle.webp" },
+              { name: "Pura Tinta", logo: "/imgs-optimized/logos/pura-tinta.webp" },
+              { name: "Magflow", logo: "/imgs-optimized/logos/magflow.webp" },
+              { name: "Sweetspot", logo: "/imgs-optimized/logos/sweetspot.webp" },
+            ].map((brand, index) => (
+              <motion.div
+                key={brand.name}
+                className="relative w-16 h-16 md:w-20 md:h-20 bg-white rounded-xl p-2 hover:scale-105 transition-all shadow-lg"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 1 + index * 0.1, duration: 0.4 }}
+              >
+                <Image
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  fill
+                  sizes="80px"
+                  className="object-contain p-1"
+                />
+              </motion.div>
+            ))}
           </motion.div>
+
         </motion.div>
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          className="absolute -bottom-16 left-1/2 -translate-x-1/2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, y: [0, 10, 0] }}
           transition={{
