@@ -1,4 +1,5 @@
 import { Navigation } from "@/components/Navigation";
+import { PasswordGate } from "@/components/PasswordGate";
 import { HeroSlide } from "@/components/slides/HeroSlide";
 import { WhoWeAreSlide } from "@/components/slides/WhoWeAreSlide";
 import { BrandsSlide } from "@/components/slides/BrandsSlide";
@@ -14,6 +15,7 @@ import { SummarySlide } from "@/components/slides/SummarySlide";
 
 export default function PitchDeck() {
   return (
+    <PasswordGate>
     <main className="relative">
       <Navigation />
 
@@ -65,5 +67,6 @@ export default function PitchDeck() {
         <SummarySlide />
       </div>
     </main>
+    </PasswordGate>
   );
 }
