@@ -26,7 +26,7 @@ const brands = [
   {
     name: "Pura Tinta Fest",
     description: "Central America's leading tattoo convention with 200+ artists.",
-    image: "/imgs-optimized/9.webp",
+    image: "/imgs-optimized/WUA00771-Enhanced-NR.webp",
     logo: "/imgs-optimized/logos/pura-tinta.webp",
     tags: ["Tattoo Convention", "Art", "Culture"],
     highlight: "International & Regional Artists",
