@@ -9,7 +9,7 @@ const brands = [
     name: "Electric Animals",
     description: "Leading electronic music festival brand in Costa Rica with international A-list artists.",
     image: "/imgs-optimized/_A1A6606.webp",
-    logo: "/imgs-optimized/Electric-Animals-Logo-fest.webp",
+    logo: "/imgs-optimized/logos/electric-animals.webp",
     tags: ["Music Festivals", "International DJs", "Multi-Edition"],
     highlight: "Carl Cox, John Digweed, The Martinez Brothers",
     color: "from-purple-600 to-pink-600",
@@ -18,6 +18,7 @@ const brands = [
     name: "Blockchain Jungle",
     description: "The largest blockchain & crypto event in Central America.",
     image: "/imgs-optimized/BCJUNGLE-7.webp",
+    logo: "/imgs-optimized/logos/blockchain-jungle.webp",
     tags: ["Tech Conference", "Networking", "Innovation"],
     highlight: "Nick Szabo, Peter Todd, Eli Ben Sasson",
     color: "from-green-500 to-emerald-600",
@@ -26,6 +27,7 @@ const brands = [
     name: "Pura Tinta Fest",
     description: "Central America's leading tattoo convention with 200+ artists.",
     image: "/imgs-optimized/9.webp",
+    logo: "/imgs-optimized/logos/pura-tinta.webp",
     tags: ["Tattoo Convention", "Art", "Culture"],
     highlight: "International & Regional Artists",
     color: "from-red-500 to-orange-600",
@@ -34,6 +36,7 @@ const brands = [
     name: "Magflow",
     description: "Music and culture platform for artist development and live experiences.",
     image: "/imgs-optimized/JACOBCOLLIER_21-09-25-04416.webp",
+    logo: "/imgs-optimized/logos/magflow.webp",
     tags: ["Artist Development", "Live Shows", "Concerts"],
     highlight: "Jacob Collier, Miguel Bose, Jon Batiste",
     color: "from-blue-500 to-cyan-500",
@@ -42,6 +45,7 @@ const brands = [
     name: "Sweetspot",
     description: "Leading esports league and competitive gaming platform.",
     image: "/imgs-optimized/IMG_6282.webp",
+    logo: "/imgs-optimized/logos/sweetspot.webp",
     tags: ["Esports", "Gaming", "Tournaments"],
     highlight: "National Leagues, Online & Live Events",
     color: "from-pink-500 to-rose-600",
@@ -95,6 +99,16 @@ export function BrandsSlide() {
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+              </div>
+
+              {/* Logo in top right */}
+              <div className="absolute top-4 right-4 w-16 h-16 md:w-20 md:h-20">
+                <Image
+                  src={brand.logo}
+                  alt={`${brand.name} logo`}
+                  fill
+                  className="object-contain drop-shadow-lg"
+                />
               </div>
 
               <div className="absolute bottom-0 left-0 right-0 p-6">
