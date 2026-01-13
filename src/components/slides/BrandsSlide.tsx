@@ -8,7 +8,7 @@ const brands = [
   {
     name: "Electric Animals",
     description: "Leading electronic music festival brand in Costa Rica with international A-list artists.",
-    image: "/imgs-optimized/_A1A6606.webp",
+    image: "/imgs-optimized/IMG_3577.webp",
     logo: "/imgs-optimized/logos/electric-animals.webp",
     tags: ["Music Festivals", "International DJs", "Multi-Edition"],
     highlight: "Carl Cox, John Digweed, The Martinez Brothers",
@@ -26,7 +26,7 @@ const brands = [
   {
     name: "Pura Tinta Fest",
     description: "Central America's leading tattoo convention with 200+ artists.",
-    image: "/imgs-optimized/WUA00771-Enhanced-NR.webp",
+    image: "/imgs-optimized/IMG_2640.webp",
     logo: "/imgs-optimized/logos/pura-tinta.webp",
     tags: ["Tattoo Convention", "Art", "Culture"],
     highlight: "International & Regional Artists",
@@ -35,7 +35,7 @@ const brands = [
   {
     name: "Magflow",
     description: "Music and culture platform for artist development and live experiences.",
-    image: "/imgs-optimized/JACOBCOLLIER_21-09-25-04416.webp",
+    image: "/imgs-optimized/_A1A6606.webp",
     logo: "/imgs-optimized/logos/magflow.webp",
     tags: ["Artist Development", "Live Shows", "Concerts"],
     highlight: "Jacob Collier, Miguel Bose, Jon Batiste",
