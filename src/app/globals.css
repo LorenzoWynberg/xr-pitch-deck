@@ -100,12 +100,18 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
-.slide {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+/* Enable scroll snapping only on desktop - feels janky on mobile touch */
+@media (min-width: 768px) {
+  html {
+    scroll-snap-type: y mandatory;
+  }
+
+  .slide {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
 }
 
 @keyframes gradient-shift {
